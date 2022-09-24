@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>University Website Design</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <script src="https://kit.fontawesome.com/d187cd2ada.js" crossorigin="anonymous"></script>
+</head> 
 <body>
     <section class="header">
         <nav>
             <a href="index.html"><img src="images/logo.webp"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -20,6 +22,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>CHITKARA UNIVERSITY</h1>
@@ -28,5 +31,80 @@
 
         </div>
     </section>
+
+<!------------- COURSE ------------>
+
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p> It offers undergraduate programs, post-graduate program and doctoral programs in fields of engineering, management, pharmacy, health sciences, nursing, hospitality, art & design and education.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>B.E. / B.Tech</h3>
+            <p>Computer Science <br> Mechanical <br> Computer Science(AI)</p>
+        </div>
+        <div class="course-col">
+            <h3>B.Sc.</h3>
+            <p>Nursing(Basic) <br> Nutrition & Dietetics <br> Culinary Art(Bakery & Pastry)</p>
+        </div>
+        <div class="course-col">
+            <h3>MBA</h3>
+            <p>Finance & Banking <br> Healthcare Management <br> Business Analytics</p>
+        </div>
+
+    </div>
+</section>
+
+<!-----------   campus --------------->
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/image-1.jpg">
+        </div>
+        <div class="campus-col">
+            <img src="images/image-2.jpg">
+        </div>
+        <div class="campus-col">
+            <img src="images/image-3.jpg">
+        </div>
+    </div>
+</section>
+
+<!------------ facilities --------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.jpg">
+            <h3>World Class Library</h3>
+            <p>The libraries at each of the campuses have spacious reading halls, periodical centres, group discussion rooms and online database browsing areas.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.jpeg">
+            <h3>Tasty and Healthy Food</h3>
+            <p>All cafeterias have menus that are designed by a team of professional dieticians, and offer nutritious and wholesome food to ensure a well-balanced diet. Fresh fruit juices, milkshakes, ice creams sundaes and even midnight snacks are available in these cafeteria.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/computing.png">
+            <h3>Imparting Knowledge</h3>
+            <p>All our campuses have state-of-the-art computer centres that provide computing facilities comprising of the latest computer machines linked to a wide range of software, communication and print services.</p>
+        </div>
+    </div>
+</section>
+
+<!----------------- JAVASCRIPT For Toggle Menu------------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
 </body>
 </html>
