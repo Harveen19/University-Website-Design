@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d187cd2ada.js" crossorigin="anonymous"></script>
+</head> 
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>The Next Big Thing In Software Engineering Courses</h1> 
+    </section>
+
+<!-------------- blog page content -------------->
+
+<section class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="images/blog.jpg">
+            <h2>The Next Big Thing In Software Engineering Courses</h2>
+            <p>Technology has been developing more quickly than anticipated in recent years. Owners of businesses must change in order to survive and remain competitive. They must keep themselves informed of the most recent market trends. It is crucial for software development businesses to be informed of current trends and to follow them as soon as they emerge.</p>
+            <br>
+            <p>Even if you may be aware of the newest technological trends, there are some state-of-the-art software development tools and languages that can be very advantageous. Your application and platform may become the next great thing if you use new methodologies using group platforms and tools.</p>
+            <br>
+            <p>In addition to making it easier for developers, new trends in software development, programming languages, and technologies like automation, libraries, blockchain, machine learning, deep learning, and automation not only speed up the process but also prepare your apps for the next level. Understanding this need of the hour, Chitkara University offers B.Tech Computer Science Engineering that focuses on all these software engineering trends.</p>
+
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" class="btn red-btn">POST COMMENT</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Categories</h3>
+            <div>
+                <span>Computer Science</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Career and Jobs</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Engineering</span>
+                <span>53</span>
+            </div>
+            <div>
+                <span>MBA</span>
+                <span>30</span>
+            </div>
+            <div>
+                <span>Design</span>
+                <span>17</span>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!----------- footer ------------>
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>CHITKARA UNIVERSITY (PUNJAB), the best university in Punjab is a government-recognized university with the right to <br> confer degrees as per the Sections 2(f) and 22(1) of the UGC Act, 1956.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa-solid fa-heart"></i> by HARVEEN KAUR</p>
+</section>
+
+
+<!----------------- JAVASCRIPT For Toggle Menu------------>
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+</html>
